@@ -36,10 +36,12 @@ int main () {
     //  SORTING VECTOR
         sort(vectorData);
 
+
     //  SHOWING THE TIME ELAPSED AFTER APPLY MERGE SORT
         int endTime = clock();
         double etime = (tstart - endTime) / (double) CLOCKS_PER_SEC;
         std::cout << "TIME ELAPSED : "<< etime ;
+
 
     //  SHOWING THE VECTOR AFTER APPLY THE ALGORITHM
         std::cout << "\nOutput after mergeSort : \n"; 
@@ -67,6 +69,8 @@ int main () {
 
 */
     int contador=0 ;    
+
+
     void sort(std::vector<int> & vec ) {
 
         contador++;
@@ -93,6 +97,8 @@ int main () {
         merge(vec, v1, v2);
 
     }
+
+
 //  End sort(std::vector<int> & vec ) 
 
 
@@ -109,6 +115,8 @@ int main () {
     the implementation can always select the first unused element in one of the input vectors to fill the next position.
 
 */
+
+
 //  MERGE
     void merge(std::vector<int> &vec,   std::vector<int> & v1,  std::vector<int> & v2) {
 
